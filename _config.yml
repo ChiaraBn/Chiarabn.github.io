@@ -1,5 +1,4 @@
 title: Chiara Boni
 description: Personal page 
-show_downloads: true
-google_analytics:
+show_downloads: false
 theme: jekyll-theme-cayman
