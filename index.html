@@ -93,9 +93,26 @@
                     <h3 class="mb-5">My CV</h3>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Download CV</h3>
                             <p><div class="social-icons">
-                              <a class="social-icon" href="assets/CV_chiara.pdf" target="_blank"><i class="fa-solid fa-circle-arrow-down"></i></a>
+                              <!-- <a class="social-icon" href="assets/CV_chiara.pdf#toolbar=0" target="_blank">
+                                <i class="fa-solid fa-circle-arrow-down"></i> -->
+
+                                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+                                <script type="text/javascript">
+                                $(function(){
+                                    $('#frameDisplay').click(function(){ 
+                                        if(!$('#iframe').length) {
+                                                $('#iframeDisplay').html('<iframe id="iframe" src="./assets/CV_chiara.pdf#toolbar=0" width="100%" height="650"></iframe>');
+                                        }
+                                    });   
+                                });
+                                </script>
+
+                                <a class="social-icon" id="frameDisplay">
+                                    <i class="fa-solid fa-circle-arrow-down"></i>
+                                </a>
+                                <div id="iframeDisplay"></div>
+                            
                             </div>
                             </p>
                         </div>
