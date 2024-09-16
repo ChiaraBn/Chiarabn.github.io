@@ -1,0 +1,12 @@
+
+/* Tooltip container */
+.tooltip_text {
+    visibility: hidden;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+  
+.list-inline-item:hover .tooltip_text {
+    visibility: visible;
+}
