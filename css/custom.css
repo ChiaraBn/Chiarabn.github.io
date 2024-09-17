@@ -5,6 +5,7 @@
     text-align: center;
     font-size: 14px;
     font-weight: 500;
+    margin-bottom: -5px;
 }
   
 .list-inline-item:hover .tooltip_text {
