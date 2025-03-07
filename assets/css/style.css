@@ -744,17 +744,12 @@ button:not(:disabled),
   border-radius: 50% !important;
 }
 
-.rounded-pill {
-  border-radius: 50rem !important;
-}
-
 .btn-rounded {
+  background-color: transparent;
   position: relative;
-  padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
+  padding: 0 3.375rem 0 1.25rem;
   font-weight: 700;
   margin: 0;
-  border: 0.1rem solid rgba(255, 255, 255, 0.6);
-  background-color: #fff;
   display: block;
 }
 .btn-rounded span {
@@ -796,7 +791,10 @@ button:not(:disabled),
   margin-top: 1.2rem;
   text-transform: none;
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
+  .btn-rounded {
+    padding: 1rem 3.375rem 1rem 1.25rem;
+}
   .display-2--description {
     font-size: 1.4rem;
     display: inline-block;
@@ -1053,11 +1051,90 @@ button:not(:disabled),
   }
 }
 
+.skills {
+  position: relative;
+  padding: 0;
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+}
+
+.skill_card {
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px 11px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skill_container {
+  width: 100%;
+}
+
+.skill {
+  margin: 15px 0;
+}
+
+.skill_title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skill_bar {
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.skill_level {
+  height: 100%;
+  border-radius: 25px;
+  transition: fill 5s ease-in-out;
+}
+
+.level_85 {
+  --skill-width: 85%;
+  background-color: #AC1754; 
+}
+
+.level_65 {
+  --skill-width: 65%;
+  background-color: #D84040; 
+}
+
+.level_50 {
+  --skill-width: 50%;
+  background-color: #F37199;
+}
+
+.level_30 {
+  --skill-width: 30%;
+  background-color: #F7A8C4; 
+}
+
+.level_25 {
+  --skill-width: 25%;
+  background-color: #D69ADE; 
+}
+
+.skill_level {
+  width: 0;
+}
+
+@keyframes fill {
+  from {
+      width: 0;
+  }
+  to {
+      width: var(--skill-width);
+  }
+}
+
+.skill_level {
+  animation: fill 5s ease-out;
+}
+
 .portfolio {
   padding: 4rem 0;
-}
-.portfolio button {
-  text-transform: capitalize;
 }
 
 .portfolio-box {
@@ -1069,8 +1146,8 @@ button:not(:disabled),
   border-top: 0.5rem solid #c685f7;
 }
 .portfolio-box img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  transform: scale(1.2) translateY(-30px);
 }
 .portfolio-box .portfolio-info {
   background-color: rgba(153, 38, 240, 0.75);
@@ -1112,22 +1189,24 @@ button:not(:disabled),
 }
 
 .contact-box {
+  display: grid;
+  justify-content: center;
   position: relative;
   margin-bottom: 20px;
 }
+.contact-box button {
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0px 17px 10px -10px var(--color-secondary);
+  cursor: pointer;
+  border-radius: 30px;
+}
+
 .contact-box__icon {
+  justify-self: center;
   width: 2rem;
-  stroke: var(--color-primary);
+  stroke: var(--color-secondary);
   padding-top: 0.5rem;
-}
-@media (min-width: 576px) {
-  .contact-box__icon {
-    width: 4rem;
-  }
-}
-.contact-box__info {
-  padding: 0.4rem;
-  font-weight: 600;
 }
 .contact-box__info--title {
   color: #fff;
@@ -1139,15 +1218,14 @@ button:not(:disabled),
     font-size: 1.4rem;
   }
 }
-.contact-box__info--subtitle {
-  font-size: 0.8rem;
-  color: #6c757d;
-  text-decoration: none;
-}
 @media (min-width: 576px) {
-  .contact-box__info--subtitle {
-    font-size: 1rem;
+  .contact-box__icon {
+    width: 4rem;
   }
+}
+.contact-box__info {
+  padding: 0.4rem;
+  font-weight: 600;
 }
 
 .footer-sm a {
