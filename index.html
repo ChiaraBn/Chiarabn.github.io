@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chiara Boni</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -17,6 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
     <script src="js/scripts.js"></script>
 </head>
 <body>
@@ -293,10 +295,14 @@
     <div class="row">
       <div class="col-lg-4 col-md-6">
         <div class="portfolio-box shadow">
-          <img src="assets/img/portfolio/dalloways.png" alt="DalloWays" title="DalloWays" class="img-fluid">
+          <img src="assets/img/portfolio/dalloways/front.png" alt="DalloWays" title="DalloWays" 
+            class="img_modal img-fluid">
           <div class="portfolio-info">
             <div class="caption">
-              <h4>DalloWays</h4>
+              <a type="button" class="portfolio_link" onclick="contentModalPortfolio('dalloways')"
+                data-toggle="modal" data-target="#portfolioModal" data-bs-target="dalloways"> 
+                <h4>DalloWays</h4>
+              </a>
               <p>GDevelop Game</p>
             </div>
           </div>
@@ -304,10 +310,12 @@
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="portfolio-box shadow">
-          <img src="assets/img/portfolio/isoRoom.png" alt="IsoRoom" title="My isometric room" class="img-fluid">
+          <img src="assets/img/portfolio/isoRoom/front.png" alt="IsoRoom" title="My isometric room" class="img_modal img-fluid">
           <div class="portfolio-info">
             <div class="caption">
-              <h4>IsoRoom</h4>
+              <a type="button" class="portfolio_link" data-toggle="modal" data-target="#modal3d" data-bs-target="dalloways"> 
+                <h4>IsoRoom</h4>
+              </a>
               <p>3D Modeling</p>
             </div>
           </div>
@@ -315,7 +323,7 @@
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="portfolio-box shadow">
-          <img src="assets/img/portfolio/riot.png" alt="cento-riot" title="cento-riot" class="img-fluid">
+          <img src="assets/img/portfolio/riot/front.png" alt="cento-riot" title="cento-riot" class="img_modal img-fluid">
           <div class="portfolio-info">
             <div class="caption">
               <h4>CENTO</h4>
@@ -326,8 +334,8 @@
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="portfolio-box shadow">
-          <img src="assets/img/portfolio/medusa_daredevil.png" alt="Medusa" 
-            title="Medusa" class="img-fluid">
+          <img src="assets/img/portfolio/medusa/front.png" alt="Medusa" 
+            title="Medusa" class="img_modal img-fluid">
           <div class="portfolio-info">
             <div class="caption">
               <h4>Concepts Creaction</h4>
@@ -338,8 +346,8 @@
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="portfolio-box shadow">
-          <img src="assets/img/portfolio/palisade.png" alt="master-thesis" 
-            title="master-thesis" class="img-fluid">
+          <img src="assets/img/portfolio/palisade/front.png" alt="master-thesis" 
+            title="master-thesis" class="img_modal img-fluid">
           <div class="portfolio-info">
             <div class="caption">
               <h4>Homomorphic Encryption in MCS Context</h4>
@@ -350,7 +358,7 @@
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="portfolio-box shadow">
-          <img src="assets/img/portfolio/smartweets.png" alt="smarttweets" title="smarttweets" class="img-fluid">
+          <img src="assets/img/portfolio/smartweets/front.png" alt="smarttweets" title="smarttweets" class="img_modal img-fluid">
           <div class="portfolio-info">
             <div class="caption">
               <h4>SmartTweets</h4>
@@ -362,6 +370,74 @@
     </div>
   </div>
 </section>
+
+<!-- Portfolio Modal -->
+<div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" 
+  aria-labelledby="portfolioModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content portfolioModalContent">
+      <div class="modal-header">
+          <h5 class="modal-title" id="portfolioModalLabel"></h5>
+          <button type="button" class="btn close btn-close-modal" data-dismiss="modal" aria-label="Close">
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#4335A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M9.16998 14.83L14.83 9.17004" stroke="#4335A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14.83 14.83L9.16998 9.17004" stroke="#4335A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+          </button>
+      </div>
+      <div class="modal-body">
+
+        <div id="carouselPortfolio" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img id="slide_one" class="d-block w-100" src="" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img id="slide_two" class="d-block w-100" src="" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img id="slide_three" class="d-block w-100" src="" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselPortfolio" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselPortfolio" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+          <ul class="list-inline ml-2" id="tech_list">
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3D modal -->
+<div class="modal fade" id="modal3d" tabindex="-1" role="dialog" 
+  aria-labelledby="portfolioModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content portfolioModalContent">
+      <div class="modal-header">
+        <h5 class="modal-title" id="portfolioModalLabel">IsoRoom</h5>
+        <button type="button" class="btn close btn-close-modal" data-dismiss="modal" aria-label="Close">
+          <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#4335A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M9.16998 14.83L14.83 9.17004" stroke="#4335A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14.83 14.83L9.16998 9.17004" stroke="#4335A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+      </div>
+
+      <div class="modal-footer">
+        <ul class="list-inline ml-2">
+          <li class="list-inline-item">Blender</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer class="footer">

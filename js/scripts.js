@@ -47,10 +47,55 @@ function typingTerminal() {
     typeMessage();
 }
 
+function contentModalPortfolio(projectName) {
+    $('#portfolioModalLabel').text(projectName);
+
+    // on modal shown
+    $('#portfolioModal').on('shown.bs.modal', function (event) {
+
+    });
+
+    let slide1 = document.getElementById("slide_one");
+    let slide2 = document.getElementById("slide_two");
+    let slide3 = document.getElementById("slide_three");
+    let ul = document.getElementById("tech_list");
+    ul.innerHTML = '';
+    let names = [];
+
+    switch(projectName) {
+        case 'dalloways':
+            slide1.src="./assets/img/portfolio/dalloways/frame1.png";
+            slide2.src="./assets/img/portfolio/dalloways/frame2.png";
+            slide3.src="./assets/img/portfolio/dalloways/frame3.png";
+            names = ['GDevelop', 'MidJourney'];
+            break;
+
+        case 'riot':
+            break;
+
+        case 'medusa':
+            break;
+
+        case 'palisade':
+            break;
+
+        case 'smartweets':
+            break;
+    }
+
+    for (var i = 0; i < names.length; i++) {
+        var name = names[i];
+        var li = document.createElement('li');
+        li.classList.add('list-inline-item');
+        li.appendChild(document.createTextNode(name));
+        ul.appendChild(li);
+    }
+}
 
 $(document).ready(function () {
     typingTerminal();
     
+    // navbar
     $("span.navbar-toggler-icon").on("click", function() {
         toggleNavbar();
     })
@@ -58,7 +103,7 @@ $(document).ready(function () {
         document.getElementById('navbarNav').classList.remove('show');
     });
 
-
+    // cv button
     $('#downloadCv').on('click', function() {
         let target = "./assets/ChiaraBoni.pdf";
         window.open(target, "_blank");
