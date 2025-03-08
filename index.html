@@ -18,6 +18,14 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.174.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.174.0/examples/jsm/"
+        }
+      }
+    </script>
    
     <script src="js/scripts.js"></script>
 </head>
@@ -300,7 +308,7 @@
           <div class="portfolio-info">
             <div class="caption">
               <a type="button" class="portfolio_link" onclick="contentModalPortfolio('dalloways')"
-                data-toggle="modal" data-target="#portfolioModal" data-bs-target="dalloways"> 
+                data-toggle="modal" data-target="#portfolioModal"> 
                 <h4>DalloWays</h4>
               </a>
               <p>GDevelop Game</p>
@@ -313,7 +321,7 @@
           <img src="assets/img/portfolio/isoRoom/front.png" alt="IsoRoom" title="My isometric room" class="img_modal img-fluid">
           <div class="portfolio-info">
             <div class="caption">
-              <a type="button" class="portfolio_link" data-toggle="modal" data-target="#modal3d" data-bs-target="dalloways"> 
+              <a type="button" class="portfolio_link" data-toggle="modal" data-target="#modal3d"> 
                 <h4>IsoRoom</h4>
               </a>
               <p>3D Modeling</p>
@@ -326,7 +334,10 @@
           <img src="assets/img/portfolio/riot/front.png" alt="cento-riot" title="cento-riot" class="img_modal img-fluid">
           <div class="portfolio-info">
             <div class="caption">
-              <h4>CENTO</h4>
+              <a type="button" class="portfolio_link" onclick="contentModalPortfolio('cento')"
+                data-toggle="modal" data-target="#portfolioModal"> 
+                <h4>CENTO</h4>
+              </a>
               <p>Videomapping</p>
             </div>
           </div>
@@ -338,7 +349,10 @@
             title="Medusa" class="img_modal img-fluid">
           <div class="portfolio-info">
             <div class="caption">
-              <h4>Concepts Creaction</h4>
+              <a type="button" class="portfolio_link" onclick="contentModalPortfolio('medusa')"
+                data-toggle="modal" data-target="#portfolioModal"> 
+                <h4>Concepts Creaction</h4>
+              </a>
               <p>MidJourney Project</p>
             </div>
           </div>
@@ -350,7 +364,10 @@
             title="master-thesis" class="img_modal img-fluid">
           <div class="portfolio-info">
             <div class="caption">
-              <h4>Homomorphic Encryption in MCS Context</h4>
+              <a type="button" class="portfolio_link" onclick="contentModalPortfolio('palisade')"
+                data-toggle="modal" data-target="#portfolioModal"> 
+                <h4>Homomorphic Encryption in MCS Context</h4>
+              </a>
               <p>Master Thesis</p>
             </div>
           </div>
@@ -361,7 +378,10 @@
           <img src="assets/img/portfolio/smartweets/front.png" alt="smarttweets" title="smarttweets" class="img_modal img-fluid">
           <div class="portfolio-info">
             <div class="caption">
-              <h4>SmartTweets</h4>
+              <a type="button" class="portfolio_link" onclick="contentModalPortfolio('smartweets')"
+                data-toggle="modal" data-target="#portfolioModal"> 
+                <h4>SmartTweets</h4>
+              </a>
               <p>Android Studio App</p>
             </div>
           </div>
@@ -383,7 +403,6 @@
           </button>
       </div>
       <div class="modal-body">
-
         <div id="carouselPortfolio" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -395,6 +414,9 @@
             <div class="carousel-item">
               <img id="slide_three" class="d-block w-100" src="" alt="Third slide">
             </div>
+            <div class="carousel-item">
+              <img id="slide_four" class="d-block w-100" src="" alt="Forth slide">
+            </div>
           </div>
           <a class="carousel-control-prev" href="#carouselPortfolio" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -405,6 +427,9 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+
+        <div id="modal-text"></div>
+
       </div>
 
       <div class="modal-footer">
@@ -427,6 +452,12 @@
         </button>
       </div>
       <div class="modal-body">
+
+
+
+        <div id="modal-text">
+
+        </div>
       
       </div>
 
