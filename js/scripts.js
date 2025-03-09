@@ -105,7 +105,7 @@ function contentModalPortfolio(projectName) {
             'Specifically, I was able to create small <b>loop animations</b> of protesters that would then be projected onto the windows of the building.</p>';
             break;
 
-        case 'medusa': 
+        case 'concepts creation': 
             slide1.src="./assets/img/portfolio/medusa/frame1.png";
             slide2.src="./assets/img/portfolio/medusa/frame2.png";
             slide3.src="./assets/img/portfolio/medusa/frame3.png";
