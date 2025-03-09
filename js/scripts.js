@@ -78,10 +78,10 @@ function contentModalPortfolio(projectName) {
             break;
 
         case 'isoroom':
-            slide1.src="./assets/img/portfolio/isoroom/frame1.png";
-            slide2.src="./assets/img/portfolio/isoroom/frame2.png";
-            slide3.src="./assets/img/portfolio/isoroom/frame3.png";
-            slide4.src="./assets/img/portfolio/isoroom/frame4.png";
+            slide1.src="./assets/img/portfolio/isoRoom/frame1.png";
+            slide2.src="./assets/img/portfolio/isoRoom/frame2.png";
+            slide3.src="./assets/img/portfolio/isoRoom/frame3.png";
+            slide4.src="./assets/img/portfolio/isoRoom/frame4.png";
             tools = ['Blender'];
             description = '<p>In this experiment I began to study <b>environments</b> and how it might be possible to replicate them within ' +
             'a <b>3D modeling</b> software such as is <b>Blender</b>.<br>'+
@@ -101,7 +101,7 @@ function contentModalPortfolio(projectName) {
             'to perform a <b>videomapping</b> celebrating these 100 years, from 1925 to 2025.</p>'+
             '<p>It was a <b>group effort</b>, starting off first with <b>3D modeling</b> of the building facade on which the videomapping was to be done, '+
             'and then dividing up the various historical events, which happened in Italy and around the world.</p>'+
-            '<p>I was mainly concerned with animating concepts set in the 1960s in Italy, so with movements of <b>rebellion</b>, demands for civil rights and riots.'+
+            '<p>I was mainly concerned with animating concepts set in the 1960s in Italy, so with movements of <b>rebellion</b>, demands for civil rights and riots. '+
             'Specifically, I was able to create small <b>loop animations</b> of protesters that would then be projected onto the windows of the building.</p>';
             break;
 
