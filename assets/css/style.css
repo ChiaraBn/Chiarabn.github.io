@@ -1216,7 +1216,7 @@ button:not(:disabled),
 
 #modal-text b {
   font-weight: bold;
-  color: var(--color-secondary);
+  color: var(--color-skill-one);
 }
 
 #carouselPortfolio {

@@ -10,22 +10,16 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://cdn.jsdelivr.net/npm/three@0.174.0/build/three.module.js",
-          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.174.0/examples/jsm/"
-        }
-      }
-    </script>
    
     <script src="js/scripts.js"></script>
 </head>
@@ -321,7 +315,8 @@
           <img src="assets/img/portfolio/isoRoom/front.png" alt="IsoRoom" title="My isometric room" class="img_modal img-fluid">
           <div class="portfolio-info">
             <div class="caption">
-              <a type="button" class="portfolio_link" data-toggle="modal" data-target="#modal3d"> 
+              <a type="button" class="portfolio_link" onclick="contentModalPortfolio('isoroom')"
+                data-toggle="modal" data-target="#portfolioModal"> 
                 <h4>IsoRoom</h4>
               </a>
               <p>3D Modeling</p>
@@ -435,36 +430,6 @@
       <div class="modal-footer">
           <ul class="list-inline ml-2" id="tech_list">
           </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- 3D modal -->
-<div class="modal fade" id="modal3d" tabindex="-1" role="dialog" 
-  aria-labelledby="portfolioModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content portfolioModalContent">
-      <div class="modal-header">
-        <h5 class="modal-title" id="portfolioModalLabel">IsoRoom</h5>
-        <button type="button" class="btn close btn-close-modal" data-dismiss="modal" aria-label="Close">
-          <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#4335A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M9.16998 14.83L14.83 9.17004" stroke="#4335A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14.83 14.83L9.16998 9.17004" stroke="#4335A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-        </button>
-      </div>
-      <div class="modal-body">
-
-
-
-        <div id="modal-text">
-
-        </div>
-      
-      </div>
-
-      <div class="modal-footer">
-        <ul class="list-inline ml-2">
-          <li class="list-inline-item">Blender</li>
-        </ul>
       </div>
     </div>
   </div>
