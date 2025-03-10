@@ -68,13 +68,14 @@ function contentModalPortfolio(projectName) {
             slide3.src="./assets/img/portfolio/dalloways/frame3.png";
             slide4.src="./assets/img/portfolio/dalloways/frame4.png";
             tools = ['GDevelop - ', 'MidJourney'];
-            description = '<p>“DalloWays - Le vie di Mrs. Dalloway” is a <b>side-view</b> cultural adventure game that follows the main character,' + 
+            description = '<h1 class="neon_text">coming soon</h1>'+
+                '<p>“DalloWays - Le vie di Mrs. Dalloway” is a <b>side-view</b> cultural adventure game that follows the main character,' + 
                 ' Clarissa Dalloway, during a walk in London during June 13, 1923. </p>' +
                 'The play is inspired by Virginia Woolf\'s novel, <b>Mrs. Dalloway</b>, with the aim of bringing the audience closer to one' +
                 ' of the classics of contemporary literature.<br> '+
                 '<p>The player progresses by exploring different areas of <b>London</b>, interacting with various characters and collecting fragments of stories and reflections,'+
                 ' following the plot of the book.</p>' +
-                'There is a “catching objects” <b>mini-game</b> to simulate the purchase of the bouquet of flowers that Clarissa picks up for her party.';
+                '<p>There is a “catching objects” <b>mini-game</b> to simulate the purchase of the bouquet of flowers that Clarissa picks up for her party.</p>';
             break;
 
         case 'isoroom':

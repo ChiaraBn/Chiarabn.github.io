@@ -2,7 +2,7 @@
   --color-primary: #4335A7;
   --color-secondary: #DA498D;
   --color-tertiary: rgba(153, 38, 240, 0.25);
-  --color-orange: #fd7e14;
+  --color-strong: #303ee1;
   --color-text: #8478a4;
 
   --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -112,8 +112,8 @@ p {
 
 b,
 strong {
-  font-weight: bolder;
-  color: var(--color-orange);
+  font-weight: bold !important;
+  color: var(--color-strong);
 }
 
 a {
@@ -795,6 +795,10 @@ button:not(:disabled),
   margin-top: 1.2rem;
   text-transform: none;
 }
+.display-2--description b {
+  color: #e61919;
+}
+
 @media (max-width: 992px) {
   .btn-rounded {
     padding: 1rem 3.375rem 1rem 1.25rem;
@@ -1194,7 +1198,22 @@ button:not(:disabled),
 }
 
 .portfolio_link:hover {
-  color: var(--color-orange);
+  color: var(--color-strong);
+}
+
+
+.neon_text {
+  font-family: monospace;
+  font-weight: 100;
+  font-size: 1rem;
+  letter-spacing: 1rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px #e61919;
+  text-transform: uppercase;
 }
 
 .modal-header {
