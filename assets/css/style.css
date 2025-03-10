@@ -796,7 +796,7 @@ button:not(:disabled),
   text-transform: none;
 }
 .display-2--description b {
-  color: #e61919;
+  color: white;
 }
 
 @media (max-width: 992px) {
