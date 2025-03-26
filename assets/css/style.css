@@ -1206,13 +1206,12 @@ button:not(:disabled),
   font-family: monospace;
   font-weight: 100;
   font-size: 1rem;
-  letter-spacing: 1rem;
   color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  text-shadow: 2px 2px 5px #e61919;
+  text-shadow: 2px 2px 5px #9719e6;
   text-transform: uppercase;
 }
 
@@ -1349,6 +1348,18 @@ button:not(:disabled),
 @media (min-width: 576px) {
   .footer-sm a i {
     font-size: 1.6rem;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .socials svg {
+    width: 26px;
   }
 }
 
