@@ -70,7 +70,7 @@ function contentModalPortfolio(projectName) {
             tools = ['GDevelop - ', 'MidJourney'];
             description = 
                 '<p>“DalloWays - Le vie di Mrs. Dalloway” is a <b>side-view</b> cultural adventure game that follows the main character,' + 
-                ' Clarissa Dalloway, during a walk in London during June 13, 1923. </p>' +
+                ' Clarissa Dalloway, during a walk in London during June, 1923. </p>' +
                 'The play is inspired by Virginia Woolf\'s novel, <b>Mrs. Dalloway</b>, with the aim of bringing the audience closer to one' +
                 ' of the classics of contemporary literature.<br> '+
                 '<p>The player progresses by exploring different areas of <b>London</b>, interacting with various characters and collecting fragments of stories and reflections,'+
