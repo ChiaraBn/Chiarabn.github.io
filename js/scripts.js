@@ -104,7 +104,8 @@ function contentModalPortfolio(projectName) {
             '<p>It was a <b>group effort</b>, starting off first with <b>3D modeling</b> of the building facade on which the videomapping was to be done, '+
             'and then dividing up the various historical events, which happened in Italy and around the world.</p>'+
             '<p>I was mainly concerned with animating concepts set in the 1960s in Italy, so with movements of <b>rebellion</b>, demands for civil rights and riots. '+
-            'Specifically, I was able to create small <b>loop animations</b> of protesters that would then be projected onto the windows of the building.</p>';
+            'Specifically, I was able to create small <b>loop animations</b> of protesters that would then be projected onto the windows of the building.</p>' +
+            '<p><a href="https://treccaniaccademia.it/mostra-videomapping-centenario-treccani/" class="neon_text">The full article</a></p>';
             break;
 
         case 'concepts creation': 
