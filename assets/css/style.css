@@ -1111,17 +1111,22 @@ button:not(:disabled),
 
 .level_50 {
   --skill-width: 50%;
-  background-color: #F37199;
+  background-color: #f66c95;
 }
 
 .level_30 {
   --skill-width: 30%;
-  background-color: #F7A8C4; 
+  background-color: #de7ddb; 
 }
 
 .level_25 {
   --skill-width: 25%;
-  background-color: #D69ADE; 
+  background-color: #de95c3; 
+}
+
+.level_15 {
+  --skill-width: 15%;
+  background-color: #eba2a2;
 }
 
 .skill_level {
